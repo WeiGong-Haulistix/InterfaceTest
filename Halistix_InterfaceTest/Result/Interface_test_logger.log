@@ -1,0 +1,288 @@
+[INFO][request_method][2021-05-11 10:33:36,211]The request url is : http://saas-test.haulistix.com/api/login
+[INFO][request_method][2021-05-11 10:33:36,211]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '66', 'Host': 'saas-test.haulistix.com'}
+[INFO][request_method][2021-05-11 10:33:36,211]The request data ispost: {"username":"weitestgong","password":"e995007b3ea64a9ae06c842c0a8b56af"}
+[INFO][request_method][2021-05-11 10:33:36,759]The request url is : http://saas-test.haulistix.com/api/login
+[INFO][request_method][2021-05-11 10:33:36,759]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '66', 'Host': 'saas-test.haulistix.com'}
+[INFO][request_method][2021-05-11 10:33:36,759]The request data ispost: {"region":"+1","phone":"7079311858","smsCode":"123456","firebaseToken":"dhzhsEhiQkKg2NM1smk0Kc:APA91bERFNd6Ukl5wq7V83dodmoR2_HdpEoaNyJX8xgfilYybkAXHxgwGWY9MxOR-hRwCUhkmd0vKfwUuqsdu28DMC5g3h0C4QMwPLXDhFfdkBY6c0Vx4_BWNN3VRnlNyiqOiTSjQucV"}
+[INFO][test_dispatch][2021-05-11 10:33:37,183]*************Step1. Create new load***************
+[INFO][request_method][2021-05-11 10:33:37,183]The request url is : http://saas-test.haulistix.com/api/saas/order
+[INFO][request_method][2021-05-11 10:33:37,184]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:37,184]The request data ispost: {"freightOrderVo":{"loadNumber":"INTERTESTGW85","originCity":"","originState":"","originLat":"","originLng":"","quote":"2000","miles":"935.7","containerType":1,"numberOfBags":"10","packaging":"testtesttestppp","cargoDetail":"testtestccc","quoteMax":"","quoteMin":"","creatorId":"","destinationCity":"","destinationLat":"","destinationLng":"","destinationState":"","driverId":"","driverName":"","id":"","specialRequirements":"","status":"","updateId":"","wgt":"100000"},"list":[{"lat":44.131735,"lon":-94.056286,"address":"555th Lane","earliestArrivalTime":1677650400000,"id":"","latestArrivalTime":1677736800000,"specialRequirements":"pickup test address","type":0,"city":"Mankato","state":"MN","contactPhone":null,"zip":"56001","county":"Blue Earth"},{"lat":40.713661,"lon":-79.337227,"address":"T666","earliestArrivalTime":1677819600000,"id":"","latestArrivalTime":1677906000000,"specialRequirements":"delivery test address","type":1,"city":"Shelocta","state":"PA","contactPhone":null,"zip":"15774","county":"Indiana"}]}
+[INFO][create_load][2021-05-11 10:33:37,635]Create load success!
+[INFO][test_dispatch][2021-05-11 10:33:37,635]*************View load list***************
+[INFO][request_method][2021-05-11 10:33:37,635]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:37,635]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:37,635]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][view_load_list][2021-05-11 10:33:38,045]New load list info correct!
+[INFO][test_dispatch][2021-05-11 10:33:38,045]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:38,048]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:38,048]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:38,048]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:38,445]INTERTESTGW85 the current status is: unassigned
+[INFO][test_dispatch][2021-05-11 10:33:38,445]*************Step2. Assign load to driver***************
+[INFO][request_method][2021-05-11 10:33:38,445]The request url is : http://saas-test.haulistix.com/api/saas/order/assign
+[INFO][request_method][2021-05-11 10:33:38,445]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:38,445]The request data ispost: {"driverId":221,"orderId":147}
+[INFO][test_dispatch][2021-05-11 10:33:38,897]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:38,900]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:38,900]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:38,900]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:39,340]INTERTESTGW85 the current status is: assign_without_confirm
+[INFO][test_dispatch][2021-05-11 10:33:39,340]*************Check upcoming load in driver***************
+[INFO][request_method][2021-05-11 10:33:39,340]The request url is : http://saas-test.haulistix.com/api/driver/order/upComing/list
+[INFO][request_method][2021-05-11 10:33:39,340]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjQ2MjFkODMwLTMxMDItNGNhZS1iYzM2LWNjMTBiNTViYTIzMiJ9.cfgiJ3nF5PszuU2Nn4_Gkji46gQ4VXqeEgTGaVonbGP5X1JhDfZYs3GkNnm-YvQ5BI1LkqZdbZjWZJ-q7m67MQ'}
+[INFO][test_dispatch][2021-05-11 10:33:39,739]*************Step3. Driver accept load***************
+[INFO][request_method][2021-05-11 10:33:39,739]The request url is : http://saas-test.haulistix.com/api/driver/order/147/confirm
+[INFO][request_method][2021-05-11 10:33:39,739]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjQ2MjFkODMwLTMxMDItNGNhZS1iYzM2LWNjMTBiNTViYTIzMiJ9.cfgiJ3nF5PszuU2Nn4_Gkji46gQ4VXqeEgTGaVonbGP5X1JhDfZYs3GkNnm-YvQ5BI1LkqZdbZjWZJ-q7m67MQ'}
+[INFO][driver_deal_load][2021-05-11 10:33:40,166]Driver accept load success!
+[INFO][test_dispatch][2021-05-11 10:33:40,166]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:40,169]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:40,169]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:40,169]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:40,606]INTERTESTGW85 the current status is: load_assigned
+[INFO][test_dispatch][2021-05-11 10:33:40,606]*************Step4. Rate confirmation load***************
+[INFO][request_method][2021-05-11 10:33:40,606]The request url is : http://saas-test.haulistix.com/api/saas/order/rate/confirmation/147
+[INFO][request_method][2021-05-11 10:33:40,606]The request header is : {'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:40,606]The request data isput: Test load, take for more time. \n12345
+[INFO][saas_deal_load][2021-05-11 10:33:41,031]Admin rate confirmation success!
+[INFO][test_dispatch][2021-05-11 10:33:41,031]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:41,034]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:41,034]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:41,035]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:41,456]INTERTESTGW85 the current status is: load_accepted
+[INFO][test_dispatch][2021-05-11 10:33:41,456]*************Step5. Driver heading to pickup***************
+[INFO][request_method][2021-05-11 10:33:41,456]The request url is : http://saas-test.haulistix.com/api/driver/order/setOut/147
+[INFO][request_method][2021-05-11 10:33:41,456]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjQ2MjFkODMwLTMxMDItNGNhZS1iYzM2LWNjMTBiNTViYTIzMiJ9.cfgiJ3nF5PszuU2Nn4_Gkji46gQ4VXqeEgTGaVonbGP5X1JhDfZYs3GkNnm-YvQ5BI1LkqZdbZjWZJ-q7m67MQ'}
+[INFO][driver_deal_load][2021-05-11 10:33:41,904]Driver heading to pickup success!
+[INFO][test_dispatch][2021-05-11 10:33:41,904]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:41,906]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:41,906]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:41,906]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:42,303]INTERTESTGW85 the current status is: load_dispatched
+[INFO][test_dispatch][2021-05-11 10:33:42,303]*************Step6. Driver complete delivery***************
+[INFO][request_method][2021-05-11 10:33:42,303]The request url is : http://saas-test.haulistix.com/api/driver/order/delivery/147
+[INFO][request_method][2021-05-11 10:33:42,303]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjQ2MjFkODMwLTMxMDItNGNhZS1iYzM2LWNjMTBiNTViYTIzMiJ9.cfgiJ3nF5PszuU2Nn4_Gkji46gQ4VXqeEgTGaVonbGP5X1JhDfZYs3GkNnm-YvQ5BI1LkqZdbZjWZJ-q7m67MQ'}
+[INFO][driver_deal_load][2021-05-11 10:33:42,733]Driver complete delivery success!
+[INFO][test_dispatch][2021-05-11 10:33:42,733]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:42,737]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:42,738]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:42,738]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:43,195]INTERTESTGW85 the current status is: missing_POD
+[INFO][test_dispatch][2021-05-11 10:33:43,195]*************Step7. Driver upload POD***************
+[INFO][upload_pod][2021-05-11 10:33:44,780]Upload POD success!
+[INFO][test_dispatch][2021-05-11 10:33:44,780]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:44,782]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:44,783]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:44,783]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:45,224]INTERTESTGW85 the current status is: POD_submitted
+[INFO][test_dispatch][2021-05-11 10:33:45,224]*************Step8. POD approval***************
+[INFO][request_method][2021-05-11 10:33:45,224]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/147/approval
+[INFO][request_method][2021-05-11 10:33:45,225]The request header is : {'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][saas_deal_load][2021-05-11 10:33:45,678]Admin POD approval success!
+[INFO][test_dispatch][2021-05-11 10:33:45,678]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:45,681]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:45,681]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:45,681]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:46,116]INTERTESTGW85 the current status is: waiting_for_payment
+[INFO][test_dispatch][2021-05-11 10:33:46,116]*************Step9. POD paid***************
+[INFO][request_method][2021-05-11 10:33:46,116]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/pay
+[INFO][request_method][2021-05-11 10:33:46,116]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:46,116]The request data isput: {"orderId":147,"payOut":1800}
+[INFO][saas_deal_load][2021-05-11 10:33:46,577]Admin paid success!
+[INFO][test_dispatch][2021-05-11 10:33:46,577]*************Check load status***************
+[INFO][request_method][2021-05-11 10:33:46,579]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:33:46,580]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjZkOTgwZWQ0LWFhNTYtNDg3YS05ZmE2LTVmN2U5MWI2ZjU3YSJ9.ezeFexwKgNFZU1Jx6-zKNx5WytehQ6ZZGSduXIcpniVOT6XQBzeJdncfS5SLzC9hN9sOOM5PRGxTqjGQRRQqUg'}
+[INFO][request_method][2021-05-11 10:33:46,580]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:33:47,021]INTERTESTGW85 the current status is: paid
+[INFO][request_method][2021-05-11 10:38:47,038]The request url is : http://saas-test.haulistix.com/api/login
+[INFO][request_method][2021-05-11 10:38:47,038]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '66', 'Host': 'saas-test.haulistix.com'}
+[INFO][request_method][2021-05-11 10:38:47,038]The request data ispost: {"username":"weitestgong","password":"e995007b3ea64a9ae06c842c0a8b56af"}
+[INFO][request_method][2021-05-11 10:38:47,570]The request url is : http://saas-test.haulistix.com/api/login
+[INFO][request_method][2021-05-11 10:38:47,570]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '66', 'Host': 'saas-test.haulistix.com'}
+[INFO][request_method][2021-05-11 10:38:47,570]The request data ispost: {"region":"+1","phone":"7079311858","smsCode":"123456","firebaseToken":"dhzhsEhiQkKg2NM1smk0Kc:APA91bERFNd6Ukl5wq7V83dodmoR2_HdpEoaNyJX8xgfilYybkAXHxgwGWY9MxOR-hRwCUhkmd0vKfwUuqsdu28DMC5g3h0C4QMwPLXDhFfdkBY6c0Vx4_BWNN3VRnlNyiqOiTSjQucV"}
+[INFO][test_dispatch][2021-05-11 10:38:48,024]*************Step1. Create new load***************
+[INFO][request_method][2021-05-11 10:38:48,024]The request url is : http://saas-test.haulistix.com/api/saas/order
+[INFO][request_method][2021-05-11 10:38:48,025]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:48,025]The request data ispost: {"freightOrderVo":{"loadNumber":"INTERTESTGW86","originCity":"","originState":"","originLat":"","originLng":"","quote":"2000","miles":"935.7","containerType":1,"numberOfBags":"10","packaging":"testtesttestppp","cargoDetail":"testtestccc","quoteMax":"","quoteMin":"","creatorId":"","destinationCity":"","destinationLat":"","destinationLng":"","destinationState":"","driverId":"","driverName":"","id":"","specialRequirements":"","status":"","updateId":"","wgt":"100000"},"list":[{"lat":44.131735,"lon":-94.056286,"address":"555th Lane","earliestArrivalTime":1677650400000,"id":"","latestArrivalTime":1677736800000,"specialRequirements":"pickup test address","type":0,"city":"Mankato","state":"MN","contactPhone":null,"zip":"56001","county":"Blue Earth"},{"lat":40.713661,"lon":-79.337227,"address":"T666","earliestArrivalTime":1677819600000,"id":"","latestArrivalTime":1677906000000,"specialRequirements":"delivery test address","type":1,"city":"Shelocta","state":"PA","contactPhone":null,"zip":"15774","county":"Indiana"}]}
+[INFO][create_load][2021-05-11 10:38:48,509]Create load success!
+[INFO][test_dispatch][2021-05-11 10:38:48,509]*************View load list***************
+[INFO][request_method][2021-05-11 10:38:48,509]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:48,509]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:48,509]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][view_load_list][2021-05-11 10:38:48,932]New load list info correct!
+[INFO][test_dispatch][2021-05-11 10:38:48,932]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:48,935]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:48,935]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:48,935]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:49,361]INTERTESTGW86 the current status is: unassigned
+[INFO][test_dispatch][2021-05-11 10:38:49,362]*************Step2. Assign load to driver***************
+[INFO][request_method][2021-05-11 10:38:49,362]The request url is : http://saas-test.haulistix.com/api/saas/order/assign
+[INFO][request_method][2021-05-11 10:38:49,362]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:49,362]The request data ispost: {"driverId":221,"orderId":148}
+[INFO][test_dispatch][2021-05-11 10:38:49,798]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:49,801]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:49,802]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:49,802]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:50,204]INTERTESTGW86 the current status is: assign_without_confirm
+[INFO][test_dispatch][2021-05-11 10:38:50,204]*************Check upcoming load in driver***************
+[INFO][request_method][2021-05-11 10:38:50,204]The request url is : http://saas-test.haulistix.com/api/driver/order/upComing/list
+[INFO][request_method][2021-05-11 10:38:50,204]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjMwNGU2ODM5LTk4OGEtNDE1Ny1iOWE3LTAxYzllZGQ4YTc1ZCJ9.VQXnpfjJeUENpDHfVOFp35eRP_NkSiXjtpJhZFzsuZtU_M_tWXjoNDmSpUdqIlZ06l--NIRAJl4MAQAd6OZvIw'}
+[INFO][test_dispatch][2021-05-11 10:38:50,607]*************Step3. Driver accept load***************
+[INFO][request_method][2021-05-11 10:38:50,607]The request url is : http://saas-test.haulistix.com/api/driver/order/148/confirm
+[INFO][request_method][2021-05-11 10:38:50,607]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjMwNGU2ODM5LTk4OGEtNDE1Ny1iOWE3LTAxYzllZGQ4YTc1ZCJ9.VQXnpfjJeUENpDHfVOFp35eRP_NkSiXjtpJhZFzsuZtU_M_tWXjoNDmSpUdqIlZ06l--NIRAJl4MAQAd6OZvIw'}
+[INFO][driver_deal_load][2021-05-11 10:38:51,062]Driver accept load success!
+[INFO][test_dispatch][2021-05-11 10:38:51,062]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:51,065]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:51,065]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:51,065]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:51,478]INTERTESTGW86 the current status is: load_assigned
+[INFO][test_dispatch][2021-05-11 10:38:51,478]*************Step4. Rate confirmation load***************
+[INFO][request_method][2021-05-11 10:38:51,478]The request url is : http://saas-test.haulistix.com/api/saas/order/rate/confirmation/148
+[INFO][request_method][2021-05-11 10:38:51,478]The request header is : {'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:51,479]The request data isput: Test load, take for more time. \n12345
+[INFO][saas_deal_load][2021-05-11 10:38:51,935]Admin rate confirmation success!
+[INFO][test_dispatch][2021-05-11 10:38:51,935]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:51,938]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:51,938]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:51,938]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:52,381]INTERTESTGW86 the current status is: load_accepted
+[INFO][test_dispatch][2021-05-11 10:38:52,381]*************Step5. Driver heading to pickup***************
+[INFO][request_method][2021-05-11 10:38:52,381]The request url is : http://saas-test.haulistix.com/api/driver/order/setOut/148
+[INFO][request_method][2021-05-11 10:38:52,381]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjMwNGU2ODM5LTk4OGEtNDE1Ny1iOWE3LTAxYzllZGQ4YTc1ZCJ9.VQXnpfjJeUENpDHfVOFp35eRP_NkSiXjtpJhZFzsuZtU_M_tWXjoNDmSpUdqIlZ06l--NIRAJl4MAQAd6OZvIw'}
+[INFO][driver_deal_load][2021-05-11 10:38:52,806]Driver heading to pickup success!
+[INFO][test_dispatch][2021-05-11 10:38:52,807]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:52,809]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:52,809]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:52,809]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:53,241]INTERTESTGW86 the current status is: load_dispatched
+[INFO][test_dispatch][2021-05-11 10:38:53,241]*************Step6. Driver complete delivery***************
+[INFO][request_method][2021-05-11 10:38:53,241]The request url is : http://saas-test.haulistix.com/api/driver/order/delivery/148
+[INFO][request_method][2021-05-11 10:38:53,241]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjMwNGU2ODM5LTk4OGEtNDE1Ny1iOWE3LTAxYzllZGQ4YTc1ZCJ9.VQXnpfjJeUENpDHfVOFp35eRP_NkSiXjtpJhZFzsuZtU_M_tWXjoNDmSpUdqIlZ06l--NIRAJl4MAQAd6OZvIw'}
+[INFO][driver_deal_load][2021-05-11 10:38:53,707]Driver complete delivery success!
+[INFO][test_dispatch][2021-05-11 10:38:53,708]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:53,710]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:53,710]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:53,711]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:54,116]INTERTESTGW86 the current status is: missing_POD
+[INFO][test_dispatch][2021-05-11 10:38:54,116]*************Step7. Driver upload POD***************
+[INFO][upload_pod][2021-05-11 10:38:55,761]Upload POD success!
+[INFO][test_dispatch][2021-05-11 10:38:55,761]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:55,764]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:55,764]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:55,764]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:56,176]INTERTESTGW86 the current status is: POD_submitted
+[INFO][test_dispatch][2021-05-11 10:38:56,176]*************Step8. POD approval***************
+[INFO][request_method][2021-05-11 10:38:56,176]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/148/approval
+[INFO][request_method][2021-05-11 10:38:56,176]The request header is : {'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][saas_deal_load][2021-05-11 10:38:56,622]Admin POD approval success!
+[INFO][test_dispatch][2021-05-11 10:38:56,622]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:56,625]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:56,625]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:56,625]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:57,033]INTERTESTGW86 the current status is: waiting_for_payment
+[INFO][test_dispatch][2021-05-11 10:38:57,034]*************Step9. POD paid***************
+[INFO][request_method][2021-05-11 10:38:57,034]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/pay
+[INFO][request_method][2021-05-11 10:38:57,034]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:57,034]The request data isput: {"orderId":148,"payOut":1800}
+[INFO][saas_deal_load][2021-05-11 10:38:57,502]Admin paid success!
+[INFO][test_dispatch][2021-05-11 10:38:57,503]*************Check load status***************
+[INFO][request_method][2021-05-11 10:38:57,505]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:38:57,505]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImM3NWU2NDFlLWUwODgtNGYxZS1iMWU0LTI4NjM2MGRlYTdiNyJ9.n7k30u_nJMK73ZrwxCajk2SC2koJbP8bXbysSl_RHAO6sQfK9-NCLKN399HwkuF03Nchxpvw7pdQjYDqp92gBw'}
+[INFO][request_method][2021-05-11 10:38:57,505]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:38:57,955]INTERTESTGW86 the current status is: paid
+[INFO][request_method][2021-05-11 10:43:57,970]The request url is : http://saas-test.haulistix.com/api/login
+[INFO][request_method][2021-05-11 10:43:57,970]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '66', 'Host': 'saas-test.haulistix.com'}
+[INFO][request_method][2021-05-11 10:43:57,970]The request data ispost: {"username":"weitestgong","password":"e995007b3ea64a9ae06c842c0a8b56af"}
+[INFO][request_method][2021-05-11 10:43:58,548]The request url is : http://saas-test.haulistix.com/api/login
+[INFO][request_method][2021-05-11 10:43:58,549]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '66', 'Host': 'saas-test.haulistix.com'}
+[INFO][request_method][2021-05-11 10:43:58,549]The request data ispost: {"region":"+1","phone":"7079311858","smsCode":"123456","firebaseToken":"dhzhsEhiQkKg2NM1smk0Kc:APA91bERFNd6Ukl5wq7V83dodmoR2_HdpEoaNyJX8xgfilYybkAXHxgwGWY9MxOR-hRwCUhkmd0vKfwUuqsdu28DMC5g3h0C4QMwPLXDhFfdkBY6c0Vx4_BWNN3VRnlNyiqOiTSjQucV"}
+[INFO][test_dispatch][2021-05-11 10:43:58,969]*************Step1. Create new load***************
+[INFO][request_method][2021-05-11 10:43:58,970]The request url is : http://saas-test.haulistix.com/api/saas/order
+[INFO][request_method][2021-05-11 10:43:58,970]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:43:58,970]The request data ispost: {"freightOrderVo":{"loadNumber":"INTERTESTGW87","originCity":"","originState":"","originLat":"","originLng":"","quote":"2000","miles":"935.7","containerType":1,"numberOfBags":"10","packaging":"testtesttestppp","cargoDetail":"testtestccc","quoteMax":"","quoteMin":"","creatorId":"","destinationCity":"","destinationLat":"","destinationLng":"","destinationState":"","driverId":"","driverName":"","id":"","specialRequirements":"","status":"","updateId":"","wgt":"100000"},"list":[{"lat":44.131735,"lon":-94.056286,"address":"555th Lane","earliestArrivalTime":1677650400000,"id":"","latestArrivalTime":1677736800000,"specialRequirements":"pickup test address","type":0,"city":"Mankato","state":"MN","contactPhone":null,"zip":"56001","county":"Blue Earth"},{"lat":40.713661,"lon":-79.337227,"address":"T666","earliestArrivalTime":1677819600000,"id":"","latestArrivalTime":1677906000000,"specialRequirements":"delivery test address","type":1,"city":"Shelocta","state":"PA","contactPhone":null,"zip":"15774","county":"Indiana"}]}
+[INFO][create_load][2021-05-11 10:43:59,411]Create load success!
+[INFO][test_dispatch][2021-05-11 10:43:59,412]*************View load list***************
+[INFO][request_method][2021-05-11 10:43:59,412]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:43:59,412]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:43:59,412]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][view_load_list][2021-05-11 10:43:59,818]New load list info correct!
+[INFO][test_dispatch][2021-05-11 10:43:59,818]*************Check load status***************
+[INFO][request_method][2021-05-11 10:43:59,821]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:43:59,821]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:43:59,821]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:00,246]INTERTESTGW87 the current status is: unassigned
+[INFO][test_dispatch][2021-05-11 10:44:00,246]*************Step2. Assign load to driver***************
+[INFO][request_method][2021-05-11 10:44:00,246]The request url is : http://saas-test.haulistix.com/api/saas/order/assign
+[INFO][request_method][2021-05-11 10:44:00,246]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:00,246]The request data ispost: {"driverId":221,"orderId":149}
+[INFO][test_dispatch][2021-05-11 10:44:00,689]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:00,691]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:00,691]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:00,691]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:01,133]INTERTESTGW87 the current status is: assign_without_confirm
+[INFO][test_dispatch][2021-05-11 10:44:01,133]*************Check upcoming load in driver***************
+[INFO][request_method][2021-05-11 10:44:01,134]The request url is : http://saas-test.haulistix.com/api/driver/order/upComing/list
+[INFO][request_method][2021-05-11 10:44:01,134]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjY2MWVjMGM0LWVhM2ItNDE1Ny05YTc3LTM5ZjVlNTlhYzczYSJ9.PuRHD6SFXRkaPaU7ubvI25C6a2Qz1way9fp69PUdn8DJlpPTRYi60TDNkRRHK4rg0FsF37YKBF6bebH9KUFihA'}
+[INFO][test_dispatch][2021-05-11 10:44:01,566]*************Step3. Driver accept load***************
+[INFO][request_method][2021-05-11 10:44:01,566]The request url is : http://saas-test.haulistix.com/api/driver/order/149/confirm
+[INFO][request_method][2021-05-11 10:44:01,566]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjY2MWVjMGM0LWVhM2ItNDE1Ny05YTc3LTM5ZjVlNTlhYzczYSJ9.PuRHD6SFXRkaPaU7ubvI25C6a2Qz1way9fp69PUdn8DJlpPTRYi60TDNkRRHK4rg0FsF37YKBF6bebH9KUFihA'}
+[INFO][driver_deal_load][2021-05-11 10:44:01,998]Driver accept load success!
+[INFO][test_dispatch][2021-05-11 10:44:01,998]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:02,001]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:02,001]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:02,001]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:02,426]INTERTESTGW87 the current status is: load_assigned
+[INFO][test_dispatch][2021-05-11 10:44:02,426]*************Step4. Rate confirmation load***************
+[INFO][request_method][2021-05-11 10:44:02,426]The request url is : http://saas-test.haulistix.com/api/saas/order/rate/confirmation/149
+[INFO][request_method][2021-05-11 10:44:02,427]The request header is : {'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:02,427]The request data isput: Test load, take for more time. \n12345
+[INFO][saas_deal_load][2021-05-11 10:44:02,896]Admin rate confirmation success!
+[INFO][test_dispatch][2021-05-11 10:44:02,896]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:02,899]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:02,899]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:02,899]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:03,345]INTERTESTGW87 the current status is: load_accepted
+[INFO][test_dispatch][2021-05-11 10:44:03,345]*************Step5. Driver heading to pickup***************
+[INFO][request_method][2021-05-11 10:44:03,346]The request url is : http://saas-test.haulistix.com/api/driver/order/setOut/149
+[INFO][request_method][2021-05-11 10:44:03,346]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjY2MWVjMGM0LWVhM2ItNDE1Ny05YTc3LTM5ZjVlNTlhYzczYSJ9.PuRHD6SFXRkaPaU7ubvI25C6a2Qz1way9fp69PUdn8DJlpPTRYi60TDNkRRHK4rg0FsF37YKBF6bebH9KUFihA'}
+[INFO][driver_deal_load][2021-05-11 10:44:03,796]Driver heading to pickup success!
+[INFO][test_dispatch][2021-05-11 10:44:03,796]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:03,799]The request url is : http://saas-test.haulistix.com/api/saas/order/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:03,799]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:03,799]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:04,260]INTERTESTGW87 the current status is: load_dispatched
+[INFO][test_dispatch][2021-05-11 10:44:04,260]*************Step6. Driver complete delivery***************
+[INFO][request_method][2021-05-11 10:44:04,260]The request url is : http://saas-test.haulistix.com/api/driver/order/delivery/149
+[INFO][request_method][2021-05-11 10:44:04,260]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjY2MWVjMGM0LWVhM2ItNDE1Ny05YTc3LTM5ZjVlNTlhYzczYSJ9.PuRHD6SFXRkaPaU7ubvI25C6a2Qz1way9fp69PUdn8DJlpPTRYi60TDNkRRHK4rg0FsF37YKBF6bebH9KUFihA'}
+[INFO][driver_deal_load][2021-05-11 10:44:04,723]Driver complete delivery success!
+[INFO][test_dispatch][2021-05-11 10:44:04,723]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:04,726]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:04,726]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:04,726]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:05,176]INTERTESTGW87 the current status is: missing_POD
+[INFO][test_dispatch][2021-05-11 10:44:05,176]*************Step7. Driver upload POD***************
+[INFO][upload_pod][2021-05-11 10:44:06,773]Upload POD success!
+[INFO][test_dispatch][2021-05-11 10:44:06,773]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:06,776]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:06,776]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:06,776]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:07,226]INTERTESTGW87 the current status is: POD_submitted
+[INFO][test_dispatch][2021-05-11 10:44:07,226]*************Step8. POD approval***************
+[INFO][request_method][2021-05-11 10:44:07,226]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/149/approval
+[INFO][request_method][2021-05-11 10:44:07,227]The request header is : {'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][saas_deal_load][2021-05-11 10:44:07,668]Admin POD approval success!
+[INFO][test_dispatch][2021-05-11 10:44:07,668]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:07,671]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:07,671]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:07,672]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:08,083]INTERTESTGW87 the current status is: waiting_for_payment
+[INFO][test_dispatch][2021-05-11 10:44:08,083]*************Step9. POD paid***************
+[INFO][request_method][2021-05-11 10:44:08,083]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/pay
+[INFO][request_method][2021-05-11 10:44:08,084]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:08,084]The request data isput: {"orderId":149,"payOut":1800}
+[INFO][saas_deal_load][2021-05-11 10:44:08,552]Admin paid success!
+[INFO][test_dispatch][2021-05-11 10:44:08,552]*************Check load status***************
+[INFO][request_method][2021-05-11 10:44:08,554]The request url is : http://saas-test.haulistix.com/api/saas/settlementPayment/list?total=0&pageNum=1&pageSize=10
+[INFO][request_method][2021-05-11 10:44:08,555]The request header is : {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '40', 'Host': 'saas-test.haulistix.com', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ5N2Y4Y2Y5LTA0MjAtNDI3ZC05ZGJkLTAyNWY1OWJmN2FiNiJ9.N3jz-cHld2VR7XrPm5XHf9tzEAql7dgcX4DyLa_xQBZXeoP4OWimrEMAWjEUDDBg24NSD65LtXaZo0kXIHzF5w'}
+[INFO][request_method][2021-05-11 10:44:08,555]The request data isget: total=0&pageNum=1&pageSize=10
+[INFO][check_load_status][2021-05-11 10:44:08,999]INTERTESTGW87 the current status is: paid
